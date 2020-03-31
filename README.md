@@ -1,2 +1,2 @@
-# he-lab-exercises
-this is a repository to keep track of exercises performed for Dr. He's Lab
+# Purpose
+This repository is to keep track of work done for Dr. Bin He's Lab.
