@@ -1,0 +1,526 @@
+; dna-pattern  -v 1 -pl $RSAT/public_html/tmp/www-data/2020/04/08/dna-pattern_2020-04-08.172747_Y0w1xp.pat -i $RSAT/public_html/tmp/www-data/2020/04/08/tmp_sequence_2020-04-08.163150_iEqdIU.fasta.fasta -format fasta -return sites -origin -0 -N 4 -return limits -noov -2str -subst 0
+; Citation: van Helden et al. (2000). Yeast 16(2), 177-187.
+; Input file           	$RSAT/public_html/tmp/www-data/2020/04/08/tmp_sequence_2020-04-08.163150_iEqdIU.fasta.fasta
+; Input format         	fasta
+; Pattern file         	$RSAT/public_html/tmp/www-data/2020/04/08/dna-pattern_2020-04-08.172747_Y0w1xp.pat
+; Search method        	regexp
+; Threshold            	0
+; Allowed substitutions	0
+; Return fields
+;                     	sites
+;                     	limits
+; Patterns
+; 	seq	id	score
+; 	acgtgc	acgtgc|gcacgt	13.06
+; 	cacgtg	cacgtg|cacgtg	12.10
+; 	cacgtgg	cacgtgg|ccacgtg	11.15
+; 	cacgtggg	cacgtggg|cccacgtg	9.40
+; 	cacgtgc	cacgtgc|gcacgtg	8.33
+; 	acgtgg	acgtgg|ccacgt	8.20
+; 	acgtggg	acgtggg|cccacgt	7.06
+; 	acgtgct	acgtgct|agcacgt	6.79
+; 	agcacgtg	agcacgtg|cacgtgct	5.82
+; 	ccacgtgc	ccacgtgc|gcacgtgg	5.72
+; 	cccacg	cccacg|cgtggg	4.49
+; 	acgtgcg	acgtgcg|cgcacgt	4.48
+; 	gcacgtgc	gcacgtgc|gcacgtgc	4.42
+; 	cacgtgcg	cacgtgcg|cgcacgtg	2.58
+; 	cgcacg	cgcacg|cgtgcg	2.01
+; 	agcacg	agcacg|cgtgct	1.92
+; 	aacgtgc	aacgtgc|gcacgtt	1.62
+; 	aacgtg	aacgtg|cacgtt	1.34
+; 	acgtgctc	acgtgctc|gagcacgt	1.27
+; 	acacgtgg	acacgtgg|ccacgtgt	0.93
+; 	aggatcc	aggatcc|ggatcct	0.83
+; 	cgtgctc	cgtgctc|gagcacg	0.80
+; 	cagccac	cagccac|gtggctg	0.69
+; 	acagccac	acagccac|gtggctgt	0.54
+; 	acacgtg	acacgtg|cacgtgt	0.52
+; 	acgtggga	acgtggga|tcccacgt	0.50
+; 	tgccaa	tgccaa|ttggca	0.48
+; 	cgtgcgta	cgtgcgta|tacgcacg	0.33
+; 	attaga	attaga|tctaat	0.07
+; 	ctgcac	ctgcac|gtgcag	0.05
+; 
+; Matching positions
+; PatID	Strand	Pattern	SeqID	Start	End	matching_seq	Score
+START_END	DR	-	PHO8	-180	-1	-	0.00
+agcacg|cgtgct	R	agcacg	PHO8	-84	-79	gtggAGCACGaaaa	1.92
+cgtgctc|gagcacg	D	cgtgctc	PHO8	-84	-78	ttttCGTGCTCcaca	0.80
+START_END	DR	-	VTC3	-632	-1	-	0.00
+acgtgc|gcacgt	D	acgtgc	VTC3	-310	-305	aagcACGTGCatgc	13.06
+acgtgc|gcacgt	R	acgtgc	VTC3	-312	-307	atgcACGTGCttgc	13.06
+cacgtg|cacgtg	DR	cacgtg	VTC3	-345	-340	ggccCACGTGgctt	12.10
+cacgtg|cacgtg	DR	cacgtg	VTC3	-311	-306	caagCACGTGcatg	12.10
+cacgtgg|ccacgtg	D	cacgtgg	VTC3	-345	-339	ggccCACGTGGctta	11.15
+cacgtgg|ccacgtg	R	cacgtgg	VTC3	-346	-340	aagcCACGTGGgccc	11.15
+cacgtggg|cccacgtg	R	cacgtggg	VTC3	-347	-340	aagcCACGTGGGccct	9.40
+cacgtgc|gcacgtg	D	cacgtgc	VTC3	-311	-305	caagCACGTGCatgc	8.33
+cacgtgc|gcacgtg	R	cacgtgc	VTC3	-312	-306	catgCACGTGCttgc	8.33
+acgtgg|ccacgt	D	acgtgg	VTC3	-344	-339	gcccACGTGGctta	8.20
+acgtgg|ccacgt	D	acgtgg	VTC3	-277	-272	agaaACGTGGaaac	8.20
+acgtgg|ccacgt	R	acgtgg	VTC3	-346	-341	agccACGTGGgccc	8.20
+acgtggg|cccacgt	R	acgtggg	VTC3	-347	-341	agccACGTGGGccct	7.06
+acgtgct|agcacgt	R	acgtgct	VTC3	-313	-307	atgcACGTGCTtgcg	6.79
+agcacgtg|cacgtgct	D	agcacgtg	VTC3	-313	-306	cgcaAGCACGTGcatg	5.82
+cccacg|cgtggg	D	cccacg	VTC3	-347	-342	agggCCCACGtggc	4.49
+gcacgtgc|gcacgtgc	DR	gcacgtgc	VTC3	-312	-305	gcaaGCACGTGCatgc	4.42
+agcacg|cgtgct	D	agcacg	VTC3	-313	-308	cgcaAGCACGtgca	1.92
+aacgtg|cacgtt	D	aacgtg	VTC3	-278	-273	cagaAACGTGgaaa	1.34
+tgccaa|ttggca	R	tgccaa	VTC3	-396	-391	aatgTGCCAAgaag	0.48
+attaga|tctaat	D	attaga	VTC3	-521	-516	aactATTAGAtagt	0.07
+attaga|tctaat	D	attaga	VTC3	-46	-41	ggctATTAGAgcga	0.07
+attaga|tctaat	R	attaga	VTC3	-105	-100	ttggATTAGAtcac	0.07
+ctgcac|gtgcag	R	ctgcac	VTC3	-324	-319	gcgaCTGCACtgtg	0.05
+START_END	DR	-	SPL2	-608	-1	-	0.00
+acgtgc|gcacgt	D	acgtgc	SPL2	-89	-84	tcccACGTGCtccg	13.06
+acgtgc|gcacgt	D	acgtgc	SPL2	-30	-25	agccACGTGCctag	13.06
+acgtgc|gcacgt	R	acgtgc	SPL2	-148	-143	gcccACGTGCgtac	13.06
+cacgtg|cacgtg	DR	cacgtg	SPL2	-361	-356	tgctCACGTGaccg	12.10
+cacgtg|cacgtg	DR	cacgtg	SPL2	-147	-142	tacgCACGTGggcg	12.10
+cacgtg|cacgtg	DR	cacgtg	SPL2	-90	-85	ttccCACGTGctcc	12.10
+cacgtg|cacgtg	DR	cacgtg	SPL2	-31	-26	cagcCACGTGccta	12.10
+cacgtgg|ccacgtg	D	cacgtgg	SPL2	-147	-141	tacgCACGTGGgcga	11.15
+cacgtgg|ccacgtg	R	cacgtgg	SPL2	-91	-85	ggagCACGTGGgaaa	11.15
+cacgtgg|ccacgtg	R	cacgtgg	SPL2	-32	-26	taggCACGTGGctgc	11.15
+cacgtggg|cccacgtg	D	cacgtggg	SPL2	-147	-140	tacgCACGTGGGcgaa	9.40
+cacgtggg|cccacgtg	R	cacgtggg	SPL2	-92	-85	ggagCACGTGGGaaaa	9.40
+cacgtgc|gcacgtg	D	cacgtgc	SPL2	-90	-84	ttccCACGTGCtccg	8.33
+cacgtgc|gcacgtg	D	cacgtgc	SPL2	-31	-25	cagcCACGTGCctag	8.33
+cacgtgc|gcacgtg	R	cacgtgc	SPL2	-148	-142	cgccCACGTGCgtac	8.33
+acgtgg|ccacgt	D	acgtgg	SPL2	-146	-141	acgcACGTGGgcga	8.20
+acgtgg|ccacgt	R	acgtgg	SPL2	-91	-86	gagcACGTGGgaaa	8.20
+acgtgg|ccacgt	R	acgtgg	SPL2	-32	-27	aggcACGTGGctgc	8.20
+acgtggg|cccacgt	D	acgtggg	SPL2	-146	-140	acgcACGTGGGcgaa	7.06
+acgtggg|cccacgt	R	acgtggg	SPL2	-92	-86	gagcACGTGGGaaaa	7.06
+acgtgct|agcacgt	D	acgtgct	SPL2	-89	-83	tcccACGTGCTccgc	6.79
+agcacgtg|cacgtgct	R	agcacgtg	SPL2	-90	-83	gcggAGCACGTGggaa	5.82
+ccacgtgc|gcacgtgg	D	ccacgtgc	SPL2	-91	-84	tttcCCACGTGCtccg	5.72
+ccacgtgc|gcacgtgg	D	ccacgtgc	SPL2	-32	-25	gcagCCACGTGCctag	5.72
+ccacgtgc|gcacgtgg	R	ccacgtgc	SPL2	-148	-141	tcgcCCACGTGCgtac	5.72
+cccacg|cgtggg	D	cccacg	SPL2	-92	-87	ttttCCCACGtgct	4.49
+cccacg|cgtggg	R	cccacg	SPL2	-145	-140	ttcgCCCACGtgcg	4.49
+acgtgcg|cgcacgt	R	acgtgcg	SPL2	-149	-143	gcccACGTGCGtaca	4.48
+cacgtgcg|cgcacgtg	R	cacgtgcg	SPL2	-149	-142	cgccCACGTGCGtaca	2.58
+cgcacg|cgtgcg	D	cgcacg	SPL2	-149	-144	tgtaCGCACGtggg	2.01
+agcacg|cgtgct	R	agcacg	SPL2	-88	-83	gcggAGCACGtggg	1.92
+acgtgctc|gagcacgt	D	acgtgctc	SPL2	-89	-82	tcccACGTGCTCcgct	1.27
+cgtgctc|gagcacg	D	cgtgctc	SPL2	-88	-82	cccaCGTGCTCcgct	0.80
+cagccac|gtggctg	D	cagccac	SPL2	-35	-29	actgCAGCCACgtgc	0.69
+acgtggga|tcccacgt	R	acgtggga	SPL2	-93	-86	gagcACGTGGGAaaag	0.50
+cgtgcgta|tacgcacg	R	cgtgcgta	SPL2	-151	-144	cccaCGTGCGTAcatc	0.33
+START_END	DR	-	PHO81	-800	-1	-	0.00
+acgtgc|gcacgt	D	acgtgc	PHO81	-343	-338	tggcACGTGCgaat	13.06
+acgtgc|gcacgt	D	acgtgc	PHO81	-7	-2	ataaACGTGCa	13.06
+acgtgc|gcacgt	R	acgtgc	PHO81	-345	-340	tcgcACGTGCcata	13.06
+cacgtg|cacgtg	DR	cacgtg	PHO81	-344	-339	atggCACGTGcgaa	12.10
+cacgtgc|gcacgtg	D	cacgtgc	PHO81	-344	-338	atggCACGTGCgaat	8.33
+cacgtgc|gcacgtg	R	cacgtgc	PHO81	-345	-339	ttcgCACGTGCcata	8.33
+acgtgg|ccacgt	D	acgtgg	PHO81	-715	-710	cgctACGTGGaatg	8.20
+acgtgcg|cgcacgt	D	acgtgcg	PHO81	-343	-337	tggcACGTGCGaata	4.48
+gcacgtgc|gcacgtgc	DR	gcacgtgc	PHO81	-345	-338	tatgGCACGTGCgaat	4.42
+cacgtgcg|cgcacgtg	D	cacgtgcg	PHO81	-344	-337	atggCACGTGCGaata	2.58
+cgcacg|cgtgcg	R	cgcacg	PHO81	-342	-337	tattCGCACGtgcc	2.01
+aacgtgc|gcacgtt	D	aacgtgc	PHO81	-8	-2	gataAACGTGCa	1.62
+aacgtg|cacgtt	D	aacgtg	PHO81	-8	-3	gataAACGTGca	1.34
+tgccaa|ttggca	R	tgccaa	PHO81	-514	-509	cgcgTGCCAAagac	0.48
+ctgcac|gtgcag	D	ctgcac	PHO81	-130	-125	tcagCTGCACtagt	0.05
+START_END	DR	-	PHO86	-232	-1	-	0.00
+acgtgc|gcacgt	D	acgtgc	PHO86	-189	-184	ccgcACGTGCtctt	13.06
+acgtgc|gcacgt	R	acgtgc	PHO86	-191	-186	gagcACGTGCgggc	13.06
+cacgtg|cacgtg	DR	cacgtg	PHO86	-190	-185	cccgCACGTGctct	12.10
+cacgtgc|gcacgtg	D	cacgtgc	PHO86	-190	-184	cccgCACGTGCtctt	8.33
+cacgtgc|gcacgtg	R	cacgtgc	PHO86	-191	-185	agagCACGTGCgggc	8.33
+acgtgct|agcacgt	D	acgtgct	PHO86	-189	-183	ccgcACGTGCTcttt	6.79
+agcacgtg|cacgtgct	R	agcacgtg	PHO86	-190	-183	aaagAGCACGTGcggg	5.82
+acgtgcg|cgcacgt	R	acgtgcg	PHO86	-192	-186	gagcACGTGCGggcg	4.48
+gcacgtgc|gcacgtgc	DR	gcacgtgc	PHO86	-191	-184	gcccGCACGTGCtctt	4.42
+cacgtgcg|cgcacgtg	R	cacgtgcg	PHO86	-192	-185	agagCACGTGCGggcg	2.58
+cgcacg|cgtgcg	D	cgcacg	PHO86	-192	-187	cgccCGCACGtgct	2.01
+agcacg|cgtgct	R	agcacg	PHO86	-188	-183	aaagAGCACGtgcg	1.92
+acgtgctc|gagcacgt	D	acgtgctc	PHO86	-189	-182	ccgcACGTGCTCttta	1.27
+cgtgctc|gagcacg	D	cgtgctc	PHO86	-188	-182	cgcaCGTGCTCttta	0.80
+START_END	DR	-	PHO5	-800	-1	-	0.00
+acgtgc|gcacgt	R	acgtgc	PHO5	-363	-358	gaaaACGTGCtaat	13.06
+cacgtg|cacgtg	DR	cacgtg	PHO5	-253	-248	ctcaCACGTGggac	12.10
+cacgtgg|ccacgtg	D	cacgtgg	PHO5	-253	-247	ctcaCACGTGGgact	11.15
+cacgtggg|cccacgtg	D	cacgtggg	PHO5	-253	-246	ctcaCACGTGGGacta	9.40
+acgtgg|ccacgt	D	acgtgg	PHO5	-252	-247	tcacACGTGGgact	8.20
+acgtggg|cccacgt	D	acgtggg	PHO5	-252	-246	tcacACGTGGGacta	7.06
+acgtgct|agcacgt	R	acgtgct	PHO5	-364	-358	gaaaACGTGCTaatt	6.79
+cccacg|cgtggg	D	cccacg	PHO5	-604	-599	agtcCCCACGctaa	4.49
+cccacg|cgtggg	R	cccacg	PHO5	-251	-246	tagtCCCACGtgtg	4.49
+cgcacg|cgtgcg	D	cgcacg	PHO5	-583	-578	gtgtCGCACGctct	2.01
+agcacg|cgtgct	D	agcacg	PHO5	-364	-359	aattAGCACGtttt	1.92
+aacgtgc|gcacgtt	R	aacgtgc	PHO5	-363	-357	cgaaAACGTGCtaat	1.62
+aacgtg|cacgtt	D	aacgtg	PHO5	-724	-719	gagaAACGTGaccc	1.34
+aacgtg|cacgtt	R	aacgtg	PHO5	-362	-357	cgaaAACGTGctaa	1.34
+acacgtgg|ccacgtgt	D	acacgtgg	PHO5	-254	-247	actcACACGTGGgact	0.93
+aggatcc|ggatcct	D	aggatcc	PHO5	-543	-537	tacaAGGATCCgaaa	0.83
+acacgtg|cacgtgt	D	acacgtg	PHO5	-254	-248	actcACACGTGggac	0.52
+acgtggga|tcccacgt	D	acgtggga	PHO5	-252	-245	tcacACGTGGGActag	0.50
+tgccaa|ttggca	D	tgccaa	PHO5	-332	-327	acaaTGCCAAaaaa	0.48
+tgccaa|ttggca	D	tgccaa	PHO5	-191	-186	cacaTGCCAAatta	0.48
+tgccaa|ttggca	R	tgccaa	PHO5	-765	-760	ctaaTGCCAAtgtg	0.48
+tgccaa|ttggca	R	tgccaa	PHO5	-263	-258	tgagTGCCAAggtt	0.48
+tgccaa|ttggca	R	tgccaa	PHO5	-163	-158	gcctTGCCAAgtaa	0.48
+attaga|tctaat	R	attaga	PHO5	-691	-686	gattATTAGAagga	0.07
+ctgcac|gtgcag	D	ctgcac	PHO5	-772	-767	actaCTGCACattg	0.05
+ctgcac|gtgcag	D	ctgcac	PHO5	-390	-385	ttgtCTGCACaaag	0.05
+ctgcac|gtgcag	D	ctgcac	PHO5	-340	-335	gcaaCTGCACaatg	0.05
+START_END	DR	-	PHO11	-800	-1	-	0.00
+acgtgc|gcacgt	R	acgtgc	PHO11	-215	-210	tgtgACGTGCggaa	13.06
+cacgtg|cacgtg	DR	cacgtg	PHO11	-283	-278	ttcaCACGTGggtt	12.10
+cacgtgg|ccacgtg	D	cacgtgg	PHO11	-283	-277	ttcaCACGTGGgttt	11.15
+cacgtggg|cccacgtg	D	cacgtggg	PHO11	-283	-276	ttcaCACGTGGGttta	9.40
+acgtgg|ccacgt	D	acgtgg	PHO11	-282	-277	tcacACGTGGgttt	8.20
+acgtgg|ccacgt	R	acgtgg	PHO11	-417	-412	gaaaACGTGGtaat	8.20
+acgtggg|cccacgt	D	acgtggg	PHO11	-282	-276	tcacACGTGGGttta	7.06
+cccacg|cgtggg	R	cccacg	PHO11	-501	-496	gacaCCCACGatga	4.49
+cccacg|cgtggg	R	cccacg	PHO11	-281	-276	taaaCCCACGtgtg	4.49
+acgtgcg|cgcacgt	R	acgtgcg	PHO11	-216	-210	tgtgACGTGCGgaat	4.48
+cgcacg|cgtgcg	D	cgcacg	PHO11	-216	-211	attcCGCACGtcac	2.01
+aacgtg|cacgtt	R	aacgtg	PHO11	-416	-411	cgaaAACGTGgtaa	1.34
+acacgtgg|ccacgtgt	D	acacgtgg	PHO11	-284	-277	gttcACACGTGGgttt	0.93
+acacgtg|cacgtgt	D	acacgtg	PHO11	-284	-278	gttcACACGTGggtt	0.52
+tgccaa|ttggca	D	tgccaa	PHO11	-204	-199	acatTGCCAAattg	0.48
+tgccaa|ttggca	D	tgccaa	PHO11	-138	-133	gaatTGCCAAgtaa	0.48
+attaga|tctaat	R	attaga	PHO11	-493	-488	ctttATTAGAcacc	0.07
+START_END	DR	-	PHO84	-800	-1	-	0.00
+acgtgc|gcacgt	D	acgtgc	PHO84	-559	-554	ctatACGTGCagca	13.06
+acgtgc|gcacgt	D	acgtgc	PHO84	-261	-256	aaaaACGTGCgtat	13.06
+acgtgc|gcacgt	R	acgtgc	PHO84	-588	-583	accaACGTGCgtaa	13.06
+acgtgc|gcacgt	R	acgtgc	PHO84	-415	-410	ccccACGTGCtgga	13.06
+cacgtg|cacgtg	DR	cacgtg	PHO84	-436	-431	gttcCACGTGgacg	12.10
+cacgtg|cacgtg	DR	cacgtg	PHO84	-414	-409	ccagCACGTGgggc	12.10
+cacgtgg|ccacgtg	D	cacgtgg	PHO84	-436	-430	gttcCACGTGGacgt	11.15
+cacgtgg|ccacgtg	D	cacgtgg	PHO84	-414	-408	ccagCACGTGGggcg	11.15
+cacgtgg|ccacgtg	R	cacgtgg	PHO84	-437	-431	cgtcCACGTGGaact	11.15
+cacgtggg|cccacgtg	D	cacgtggg	PHO84	-414	-407	ccagCACGTGGGgcgg	9.40
+cacgtgc|gcacgtg	R	cacgtgc	PHO84	-415	-409	gcccCACGTGCtgga	8.33
+acgtgg|ccacgt	D	acgtgg	PHO84	-435	-430	ttccACGTGGacgt	8.20
+acgtgg|ccacgt	D	acgtgg	PHO84	-413	-408	cagcACGTGGggcg	8.20
+acgtgg|ccacgt	R	acgtgg	PHO84	-437	-432	gtccACGTGGaact	8.20
+acgtggg|cccacgt	D	acgtggg	PHO84	-413	-407	cagcACGTGGGgcgg	7.06
+acgtgct|agcacgt	R	acgtgct	PHO84	-416	-410	ccccACGTGCTggaa	6.79
+agcacgtg|cacgtgct	D	agcacgtg	PHO84	-416	-409	ttccAGCACGTGgggc	5.82
+ccacgtgc|gcacgtgg	R	ccacgtgc	PHO84	-415	-408	cgccCCACGTGCtgga	5.72
+cccacg|cgtggg	R	cccacg	PHO84	-412	-407	ccgcCCCACGtgct	4.49
+acgtgcg|cgcacgt	D	acgtgcg	PHO84	-261	-255	aaaaACGTGCGtatt	4.48
+acgtgcg|cgcacgt	R	acgtgcg	PHO84	-589	-583	accaACGTGCGtaat	4.48
+cgcacg|cgtgcg	D	cgcacg	PHO84	-589	-584	attaCGCACGttgg	2.01
+cgcacg|cgtgcg	R	cgcacg	PHO84	-260	-255	aataCGCACGtttt	2.01
+agcacg|cgtgct	D	agcacg	PHO84	-416	-411	ttccAGCACGtggg	1.92
+aacgtgc|gcacgtt	D	aacgtgc	PHO84	-262	-256	taaaAACGTGCgtat	1.62
+aacgtgc|gcacgtt	R	aacgtgc	PHO84	-588	-582	caccAACGTGCgtaa	1.62
+aacgtg|cacgtt	D	aacgtg	PHO84	-262	-257	taaaAACGTGcgta	1.34
+aacgtg|cacgtt	R	aacgtg	PHO84	-587	-582	caccAACGTGcgta	1.34
+tgccaa|ttggca	D	tgccaa	PHO84	-617	-612	aacaTGCCAAgaaa	0.48
+tgccaa|ttggca	D	tgccaa	PHO84	-453	-448	ccgaTGCCAAttta	0.48
+tgccaa|ttggca	D	tgccaa	PHO84	-167	-162	gtaaTGCCAActta	0.48
+tgccaa|ttggca	R	tgccaa	PHO84	-203	-198	atgcTGCCAAaaag	0.48
+cgtgcgta|tacgcacg	D	cgtgcgta	PHO84	-260	-253	aaaaCGTGCGTAttac	0.33
+cgtgcgta|tacgcacg	R	cgtgcgta	PHO84	-591	-584	ccaaCGTGCGTAatac	0.33
+ctgcac|gtgcag	R	ctgcac	PHO84	-557	-552	aatgCTGCACgtat	0.05
+ctgcac|gtgcag	R	ctgcac	PHO84	-344	-339	ataaCTGCACcgat	0.05
+START_END	DR	-	PHO89	-800	-1	-	0.00
+acgtgc|gcacgt	R	acgtgc	PHO89	-324	-319	tcccACGTGCtgca	13.06
+cacgtg|cacgtg	DR	cacgtg	PHO89	-323	-318	gcagCACGTGggag	12.10
+cacgtgg|ccacgtg	D	cacgtgg	PHO89	-323	-317	gcagCACGTGGgaga	11.15
+cacgtggg|cccacgtg	D	cacgtggg	PHO89	-323	-316	gcagCACGTGGGagac	9.40
+cacgtgc|gcacgtg	R	cacgtgc	PHO89	-324	-318	ctccCACGTGCtgca	8.33
+acgtgg|ccacgt	D	acgtgg	PHO89	-322	-317	cagcACGTGGgaga	8.20
+acgtgg|ccacgt	R	acgtgg	PHO89	-464	-459	cacaACGTGGggat	8.20
+acgtggg|cccacgt	D	acgtggg	PHO89	-322	-316	cagcACGTGGGagac	7.06
+acgtggg|cccacgt	R	acgtggg	PHO89	-465	-459	cacaACGTGGGgatg	7.06
+acgtgct|agcacgt	R	acgtgct	PHO89	-325	-319	tcccACGTGCTgcat	6.79
+agcacgtg|cacgtgct	D	agcacgtg	PHO89	-325	-318	atgcAGCACGTGggag	5.82
+ccacgtgc|gcacgtgg	R	ccacgtgc	PHO89	-324	-317	tctcCCACGTGCtgca	5.72
+cccacg|cgtggg	D	cccacg	PHO89	-465	-460	catcCCCACGttgt	4.49
+cccacg|cgtggg	R	cccacg	PHO89	-321	-316	gtctCCCACGtgct	4.49
+agcacg|cgtgct	D	agcacg	PHO89	-325	-320	atgcAGCACGtggg	1.92
+aacgtg|cacgtt	R	aacgtg	PHO89	-463	-458	gcacAACGTGggga	1.34
+aggatcc|ggatcct	R	aggatcc	PHO89	-263	-257	tagaAGGATCCaaag	0.83
+cagccac|gtggctg	D	cagccac	PHO89	-273	-267	gtcaCAGCCACtttg	0.69
+cagccac|gtggctg	R	cagccac	PHO89	-513	-507	cgcaCAGCCACacac	0.69
+acagccac|gtggctgt	D	acagccac	PHO89	-274	-267	tgtcACAGCCACtttg	0.54
+acagccac|gtggctgt	R	acagccac	PHO89	-513	-506	tcgcACAGCCACacac	0.54
+acgtggga|tcccacgt	D	acgtggga	PHO89	-322	-315	cagcACGTGGGAgaca	0.50
+attaga|tctaat	D	attaga	PHO89	-241	-236	aatcATTAGAttaa	0.07
+attaga|tctaat	R	attaga	PHO89	-36	-31	ttcgATTAGAtacg	0.07
+START_END	DR	-	PHM6	-800	-1	-	0.00
+acgtgc|gcacgt	D	acgtgc	PHM6	-562	-557	tagaACGTGCaaat	13.06
+cacgtg|cacgtg	DR	cacgtg	PHM6	-279	-274	ctgaCACGTGggag	12.10
+cacgtgg|ccacgtg	D	cacgtgg	PHM6	-279	-273	ctgaCACGTGGgagg	11.15
+cacgtggg|cccacgtg	D	cacgtggg	PHM6	-279	-272	ctgaCACGTGGGaggt	9.40
+acgtgg|ccacgt	D	acgtgg	PHM6	-433	-428	gataACGTGGtgtc	8.20
+acgtgg|ccacgt	D	acgtgg	PHM6	-278	-273	tgacACGTGGgagg	8.20
+acgtggg|cccacgt	D	acgtggg	PHM6	-278	-272	tgacACGTGGGaggt	7.06
+cccacg|cgtggg	R	cccacg	PHM6	-277	-272	acctCCCACGtgtc	4.49
+aacgtgc|gcacgtt	D	aacgtgc	PHM6	-563	-557	ttagAACGTGCaaat	1.62
+aacgtg|cacgtt	D	aacgtg	PHM6	-563	-558	ttagAACGTGcaaa	1.34
+aacgtg|cacgtt	D	aacgtg	PHM6	-434	-429	tgatAACGTGgtgt	1.34
+acacgtgg|ccacgtgt	D	acacgtgg	PHM6	-280	-273	gctgACACGTGGgagg	0.93
+acacgtg|cacgtgt	D	acacgtg	PHM6	-280	-274	gctgACACGTGggag	0.52
+acgtggga|tcccacgt	D	acgtggga	PHM6	-278	-271	tgacACGTGGGAggtg	0.50
+attaga|tctaat	D	attaga	PHM6	-568	-563	cattATTAGAacgt	0.07
+START_END	DR	-	PHO12	-599	-1	-	0.00
+acgtgc|gcacgt	R	acgtgc	PHO12	-215	-210	tgtgACGTGCggaa	13.06
+cacgtg|cacgtg	DR	cacgtg	PHO12	-283	-278	ttcaCACGTGggtt	12.10
+cacgtgg|ccacgtg	D	cacgtgg	PHO12	-283	-277	ttcaCACGTGGgttt	11.15
+cacgtggg|cccacgtg	D	cacgtggg	PHO12	-283	-276	ttcaCACGTGGGttta	9.40
+acgtgg|ccacgt	D	acgtgg	PHO12	-282	-277	tcacACGTGGgttt	8.20
+acgtgg|ccacgt	R	acgtgg	PHO12	-419	-414	gaaaACGTGGtaat	8.20
+acgtggg|cccacgt	D	acgtggg	PHO12	-282	-276	tcacACGTGGGttta	7.06
+cccacg|cgtggg	R	cccacg	PHO12	-503	-498	gacaCCCACGatga	4.49
+cccacg|cgtggg	R	cccacg	PHO12	-281	-276	taaaCCCACGtgtg	4.49
+acgtgcg|cgcacgt	R	acgtgcg	PHO12	-216	-210	tgtgACGTGCGgaat	4.48
+cgcacg|cgtgcg	D	cgcacg	PHO12	-216	-211	attcCGCACGtcac	2.01
+aacgtg|cacgtt	R	aacgtg	PHO12	-418	-413	cgaaAACGTGgtaa	1.34
+acacgtgg|ccacgtgt	D	acacgtgg	PHO12	-284	-277	gttcACACGTGGgttt	0.93
+acacgtg|cacgtgt	D	acacgtg	PHO12	-284	-278	gttcACACGTGggtt	0.52
+tgccaa|ttggca	D	tgccaa	PHO12	-204	-199	acatTGCCAAattg	0.48
+tgccaa|ttggca	D	tgccaa	PHO12	-138	-133	gaatTGCCAAgtaa	0.48
+attaga|tctaat	R	attaga	PHO12	-495	-490	ctttATTAGAcacc	0.07
+START_END	DR	-	GIT1	-800	-1	-	0.00
+acgtgc|gcacgt	D	acgtgc	GIT1	-611	-606	aagaACGTGCatat	13.06
+acgtgc|gcacgt	D	acgtgc	GIT1	-517	-512	gcgcACGTGCatga	13.06
+acgtgc|gcacgt	R	acgtgc	GIT1	-519	-514	atgcACGTGCgccg	13.06
+acgtgc|gcacgt	R	acgtgc	GIT1	-476	-471	tactACGTGCtgct	13.06
+cacgtg|cacgtg	DR	cacgtg	GIT1	-518	-513	ggcgCACGTGcatg	12.10
+cacgtgc|gcacgtg	D	cacgtgc	GIT1	-518	-512	ggcgCACGTGCatga	8.33
+cacgtgc|gcacgtg	R	cacgtgc	GIT1	-519	-513	catgCACGTGCgccg	8.33
+acgtgg|ccacgt	R	acgtgg	GIT1	-642	-637	caaaACGTGGggct	8.20
+acgtggg|cccacgt	R	acgtggg	GIT1	-643	-637	caaaACGTGGGgctg	7.06
+acgtgct|agcacgt	R	acgtgct	GIT1	-477	-471	tactACGTGCTgctt	6.79
+cccacg|cgtggg	D	cccacg	GIT1	-643	-638	cagcCCCACGtttt	4.49
+acgtgcg|cgcacgt	R	acgtgcg	GIT1	-520	-514	atgcACGTGCGccgc	4.48
+gcacgtgc|gcacgtgc	DR	gcacgtgc	GIT1	-519	-512	cggcGCACGTGCatga	4.42
+cacgtgcg|cgcacgtg	R	cacgtgcg	GIT1	-520	-513	catgCACGTGCGccgc	2.58
+cgcacg|cgtgcg	D	cgcacg	GIT1	-520	-515	gcggCGCACGtgca	2.01
+agcacg|cgtgct	D	agcacg	GIT1	-477	-472	aagcAGCACGtagt	1.92
+aacgtgc|gcacgtt	D	aacgtgc	GIT1	-612	-606	aaagAACGTGCatat	1.62
+aacgtg|cacgtt	D	aacgtg	GIT1	-612	-607	aaagAACGTGcata	1.34
+aacgtg|cacgtt	R	aacgtg	GIT1	-641	-636	gcaaAACGTGgggc	1.34
+aggatcc|ggatcct	R	aggatcc	GIT1	-404	-398	ccgtAGGATCCaatc	0.83
+cagccac|gtggctg	D	cagccac	GIT1	-681	-675	tgtaCAGCCACagat	0.69
+acagccac|gtggctgt	D	acagccac	GIT1	-682	-675	ctgtACAGCCACagat	0.54
+tgccaa|ttggca	D	tgccaa	GIT1	-634	-629	gtttTGCCAAgata	0.48
+attaga|tctaat	D	attaga	GIT1	-721	-716	acacATTAGAgcat	0.07
+attaga|tctaat	R	attaga	GIT1	-756	-751	caccATTAGAagta	0.07
+ctgcac|gtgcag	D	ctgcac	GIT1	-745	-740	gtgtCTGCACcaca	0.05
+START_END	DR	-	VTC1	-478	-1	-	0.00
+acgtgc|gcacgt	R	acgtgc	VTC1	-229	-224	tgatACGTGCtcaa	13.06
+acgtgc|gcacgt	R	acgtgc	VTC1	-158	-153	agacACGTGCtaat	13.06
+cacgtg|cacgtg	DR	cacgtg	VTC1	-157	-152	ttagCACGTGtctc	12.10
+cacgtgc|gcacgtg	R	cacgtgc	VTC1	-158	-152	gagaCACGTGCtaat	8.33
+acgtgct|agcacgt	R	acgtgct	VTC1	-230	-224	tgatACGTGCTcaaa	6.79
+acgtgct|agcacgt	R	acgtgct	VTC1	-159	-153	agacACGTGCTaata	6.79
+agcacgtg|cacgtgct	D	agcacgtg	VTC1	-159	-152	tattAGCACGTGtctc	5.82
+agcacg|cgtgct	D	agcacg	VTC1	-230	-225	tttgAGCACGtatc	1.92
+agcacg|cgtgct	D	agcacg	VTC1	-159	-154	tattAGCACGtgtc	1.92
+acgtgctc|gagcacgt	R	acgtgctc	VTC1	-231	-224	tgatACGTGCTCaaag	1.27
+cgtgctc|gagcacg	R	cgtgctc	VTC1	-231	-225	gataCGTGCTCaaag	0.80
+acacgtg|cacgtgt	R	acacgtg	VTC1	-157	-151	cgagACACGTGctaa	0.52
+tgccaa|ttggca	R	tgccaa	VTC1	-335	-330	gcgaTGCCAAtata	0.48
+START_END	DR	-	VTC4	-800	-1	-	0.00
+acgtgc|gcacgt	R	acgtgc	VTC4	-126	-121	agccACGTGCggat	13.06
+cacgtg|cacgtg	DR	cacgtg	VTC4	-125	-120	tccgCACGTGgctg	12.10
+cacgtg|cacgtg	DR	cacgtg	VTC4	-113	-108	tgcaCACGTGaatg	12.10
+cacgtgg|ccacgtg	D	cacgtgg	VTC4	-125	-119	tccgCACGTGGctgc	11.15
+cacgtgc|gcacgtg	R	cacgtgc	VTC4	-126	-120	cagcCACGTGCggat	8.33
+acgtgg|ccacgt	D	acgtgg	VTC4	-124	-119	ccgcACGTGGctgc	8.20
+acgtgg|ccacgt	R	acgtgg	VTC4	-297	-292	ggttACGTGGaaag	8.20
+ccacgtgc|gcacgtgg	R	ccacgtgc	VTC4	-126	-119	gcagCCACGTGCggat	5.72
+acgtgcg|cgcacgt	R	acgtgcg	VTC4	-127	-121	agccACGTGCGgatg	4.48
+cacgtgcg|cgcacgtg	R	cacgtgcg	VTC4	-127	-120	cagcCACGTGCGgatg	2.58
+cgcacg|cgtgcg	D	cgcacg	VTC4	-127	-122	catcCGCACGtggc	2.01
+cagccac|gtggctg	R	cagccac	VTC4	-122	-116	tgtgCAGCCACgtgc	0.69
+acacgtg|cacgtgt	D	acacgtg	VTC4	-114	-108	ctgcACACGTGaatg	0.52
+ctgcac|gtgcag	D	ctgcac	VTC4	-118	-113	gtggCTGCACacgt	0.05
+START_END	DR	-	CTF19	-632	-1	-	0.00
+acgtgc|gcacgt	D	acgtgc	CTF19	-326	-321	atgcACGTGCttgc	13.06
+acgtgc|gcacgt	R	acgtgc	CTF19	-328	-323	aagcACGTGCatgc	13.06
+cacgtg|cacgtg	DR	cacgtg	CTF19	-327	-322	catgCACGTGcttg	12.10
+cacgtg|cacgtg	DR	cacgtg	CTF19	-293	-288	aagcCACGTGggcc	12.10
+cacgtgg|ccacgtg	D	cacgtgg	CTF19	-293	-287	aagcCACGTGGgccc	11.15
+cacgtgg|ccacgtg	R	cacgtgg	CTF19	-294	-288	ggccCACGTGGctta	11.15
+cacgtggg|cccacgtg	D	cacgtggg	CTF19	-293	-286	aagcCACGTGGGccct	9.40
+cacgtgc|gcacgtg	D	cacgtgc	CTF19	-327	-321	catgCACGTGCttgc	8.33
+cacgtgc|gcacgtg	R	cacgtgc	CTF19	-328	-322	caagCACGTGCatgc	8.33
+acgtgg|ccacgt	D	acgtgg	CTF19	-292	-287	agccACGTGGgccc	8.20
+acgtgg|ccacgt	R	acgtgg	CTF19	-361	-356	agaaACGTGGaaac	8.20
+acgtgg|ccacgt	R	acgtgg	CTF19	-294	-289	gcccACGTGGctta	8.20
+acgtggg|cccacgt	D	acgtggg	CTF19	-292	-286	agccACGTGGGccct	7.06
+acgtgct|agcacgt	D	acgtgct	CTF19	-326	-320	atgcACGTGCTtgcg	6.79
+agcacgtg|cacgtgct	R	agcacgtg	CTF19	-327	-320	cgcaAGCACGTGcatg	5.82
+cccacg|cgtggg	R	cccacg	CTF19	-291	-286	agggCCCACGtggc	4.49
+gcacgtgc|gcacgtgc	DR	gcacgtgc	CTF19	-328	-321	gcatGCACGTGCttgc	4.42
+agcacg|cgtgct	R	agcacg	CTF19	-325	-320	cgcaAGCACGtgca	1.92
+aacgtg|cacgtt	R	aacgtg	CTF19	-360	-355	cagaAACGTGgaaa	1.34
+tgccaa|ttggca	D	tgccaa	CTF19	-242	-237	aatgTGCCAAgaag	0.48
+attaga|tctaat	D	attaga	CTF19	-533	-528	ttggATTAGAtcac	0.07
+attaga|tctaat	R	attaga	CTF19	-592	-587	ggctATTAGAgcga	0.07
+attaga|tctaat	R	attaga	CTF19	-117	-112	aactATTAGAtagt	0.07
+ctgcac|gtgcag	D	ctgcac	CTF19	-314	-309	gcgaCTGCACtgtg	0.05
+START_END	DR	-	ENA2	-609	-1	-	0.00
+attaga|tctaat	D	attaga	ENA2	-308	-303	tagaATTAGAaaat	0.07
+START_END	DR	-	VTC2	-800	-1	-	0.00
+acgtgc|gcacgt	D	acgtgc	VTC2	-310	-305	acccACGTGCtgct	13.06
+cacgtg|cacgtg	DR	cacgtg	VTC2	-311	-306	aaccCACGTGctgc	12.10
+cacgtgg|ccacgtg	R	cacgtgg	VTC2	-312	-306	gcagCACGTGGgttt	11.15
+cacgtggg|cccacgtg	R	cacgtggg	VTC2	-313	-306	gcagCACGTGGGtttt	9.40
+cacgtgc|gcacgtg	D	cacgtgc	VTC2	-311	-305	aaccCACGTGCtgct	8.33
+acgtgg|ccacgt	R	acgtgg	VTC2	-312	-307	cagcACGTGGgttt	8.20
+acgtggg|cccacgt	R	acgtggg	VTC2	-313	-307	cagcACGTGGGtttt	7.06
+acgtgct|agcacgt	D	acgtgct	VTC2	-310	-304	acccACGTGCTgctt	6.79
+agcacgtg|cacgtgct	R	agcacgtg	VTC2	-311	-304	aagcAGCACGTGggtt	5.82
+ccacgtgc|gcacgtgg	D	ccacgtgc	VTC2	-312	-305	aaacCCACGTGCtgct	5.72
+cccacg|cgtggg	D	cccacg	VTC2	-313	-308	aaaaCCCACGtgct	4.49
+agcacg|cgtgct	R	agcacg	VTC2	-309	-304	aagcAGCACGtggg	1.92
+tgccaa|ttggca	D	tgccaa	VTC2	-183	-178	ttctTGCCAActtt	0.48
+attaga|tctaat	D	attaga	VTC2	-783	-778	tggaATTAGAgcta	0.07
+attaga|tctaat	D	attaga	VTC2	-654	-649	tcatATTAGAtgtc	0.07
+attaga|tctaat	R	attaga	VTC2	-424	-419	aaacATTAGAacga	0.07
+START_END	DR	-	ENA1	-800	-1	-	0.00
+cgcacg|cgtgcg	R	cgcacg	ENA1	-555	-550	acgcCGCACGgcga	2.01
+cagccac|gtggctg	R	cagccac	ENA1	-725	-719	tgcaCAGCCACcctc	0.69
+acagccac|gtggctgt	R	acagccac	ENA1	-725	-718	ttgcACAGCCACcctc	0.54
+attaga|tctaat	D	attaga	ENA1	-386	-381	taatATTAGAtgaa	0.07
+attaga|tctaat	R	attaga	ENA1	-150	-145	aatgATTAGActat	0.07
+attaga|tctaat	R	attaga	ENA1	-135	-130	taatATTAGAatat	0.07
+ctgcac|gtgcag	D	ctgcac	ENA1	-600	-595	gcttCTGCACgaag	0.05
+START_END	DR	-	GDE1	-524	-1	-	0.00
+acgtgc|gcacgt	D	acgtgc	GDE1	-257	-252	tagaACGTGCacat	13.06
+cacgtg|cacgtg	DR	cacgtg	GDE1	-485	-480	cttcCACGTGttcg	12.10
+cacgtgg|ccacgtg	R	cacgtgg	GDE1	-486	-480	cgaaCACGTGGaagt	11.15
+acgtgg|ccacgt	R	acgtgg	GDE1	-486	-481	gaacACGTGGaagt	8.20
+aacgtgc|gcacgtt	D	aacgtgc	GDE1	-258	-252	ttagAACGTGCacat	1.62
+aacgtg|cacgtt	D	aacgtg	GDE1	-258	-253	ttagAACGTGcaca	1.34
+acacgtgg|ccacgtgt	R	acacgtgg	GDE1	-486	-479	gcgaACACGTGGaagt	0.93
+acacgtg|cacgtgt	R	acacgtg	GDE1	-485	-479	gcgaACACGTGgaag	0.52
+attaga|tctaat	R	attaga	GDE1	-304	-299	gtgaATTAGAaacg	0.07
+START_END	DR	-	PHM8	-689	-1	-	0.00
+acgtgc|gcacgt	D	acgtgc	PHM8	-274	-269	agcaACGTGCttca	13.06
+acgtgc|gcacgt	R	acgtgc	PHM8	-10	-5	gattACGTGCgtat	13.06
+acgtgct|agcacgt	D	acgtgct	PHM8	-274	-268	agcaACGTGCTtcac	6.79
+acgtgcg|cgcacgt	R	acgtgcg	PHM8	-11	-5	gattACGTGCGtata	4.48
+cgcacg|cgtgcg	D	cgcacg	PHM8	-11	-6	tataCGCACGtaat	2.01
+agcacg|cgtgct	R	agcacg	PHM8	-273	-268	gtgaAGCACGttgc	1.92
+aacgtgc|gcacgtt	D	aacgtgc	PHM8	-275	-269	cagcAACGTGCttca	1.62
+aacgtg|cacgtt	D	aacgtg	PHM8	-275	-270	cagcAACGTGcttc	1.34
+cgtgcgta|tacgcacg	R	cgtgcgta	PHM8	-13	-6	attaCGTGCGTAtaaa	0.33
+START_END	DR	-	VIP1	-307	-1	-	0.00
+acgtgc|gcacgt	D	acgtgc	VIP1	-154	-149	aagcACGTGCtcaa	13.06
+acgtgc|gcacgt	R	acgtgc	VIP1	-156	-151	gagcACGTGCtttt	13.06
+cacgtg|cacgtg	DR	cacgtg	VIP1	-155	-150	aaagCACGTGctca	12.10
+cacgtgc|gcacgtg	D	cacgtgc	VIP1	-155	-149	aaagCACGTGCtcaa	8.33
+cacgtgc|gcacgtg	R	cacgtgc	VIP1	-156	-150	tgagCACGTGCtttt	8.33
+acgtgct|agcacgt	D	acgtgct	VIP1	-154	-148	aagcACGTGCTcaaa	6.79
+acgtgct|agcacgt	R	acgtgct	VIP1	-157	-151	gagcACGTGCTtttt	6.79
+agcacgtg|cacgtgct	D	agcacgtg	VIP1	-157	-150	aaaaAGCACGTGctca	5.82
+agcacgtg|cacgtgct	R	agcacgtg	VIP1	-155	-148	tttgAGCACGTGcttt	5.82
+gcacgtgc|gcacgtgc	DR	gcacgtgc	VIP1	-156	-149	aaaaGCACGTGCtcaa	4.42
+agcacg|cgtgct	D	agcacg	VIP1	-157	-152	aaaaAGCACGtgct	1.92
+agcacg|cgtgct	R	agcacg	VIP1	-153	-148	tttgAGCACGtgct	1.92
+acgtgctc|gagcacgt	D	acgtgctc	VIP1	-154	-147	aagcACGTGCTCaaaa	1.27
+cgtgctc|gagcacg	D	cgtgctc	VIP1	-153	-147	agcaCGTGCTCaaaa	0.80
+START_END	DR	-	CBF1	-515	-1	-	0.00
+acgtgc|gcacgt	D	acgtgc	CBF1	-167	-162	atccACGTGCttat	13.06
+cacgtg|cacgtg	DR	cacgtg	CBF1	-168	-163	tatcCACGTGctta	12.10
+cacgtgg|ccacgtg	R	cacgtgg	CBF1	-169	-163	taagCACGTGGataa	11.15
+cacgtgc|gcacgtg	D	cacgtgc	CBF1	-168	-162	tatcCACGTGCttat	8.33
+acgtgg|ccacgt	R	acgtgg	CBF1	-169	-164	aagcACGTGGataa	8.20
+acgtgct|agcacgt	D	acgtgct	CBF1	-167	-161	atccACGTGCTtatc	6.79
+agcacgtg|cacgtgct	R	agcacgtg	CBF1	-168	-161	gataAGCACGTGgata	5.82
+ccacgtgc|gcacgtgg	D	ccacgtgc	CBF1	-169	-162	ttatCCACGTGCttat	5.72
+agcacg|cgtgct	R	agcacg	CBF1	-166	-161	gataAGCACGtgga	1.92
+aacgtg|cacgtt	R	aacgtg	CBF1	-157	-152	aaaaAACGTGataa	1.34
+aggatcc|ggatcct	R	aggatcc	CBF1	-257	-251	ccgaAGGATCCgaga	0.83
+START_END	DR	-	DDP1	-748	-1	-	0.00
+acgtgc|gcacgt	D	acgtgc	DDP1	-147	-142	gagcACGTGCggct	13.06
+acgtgc|gcacgt	R	acgtgc	DDP1	-149	-144	ccgcACGTGCtcgc	13.06
+cacgtg|cacgtg	DR	cacgtg	DDP1	-148	-143	cgagCACGTGcggc	12.10
+cacgtgc|gcacgtg	D	cacgtgc	DDP1	-148	-142	cgagCACGTGCggct	8.33
+cacgtgc|gcacgtg	R	cacgtgc	DDP1	-149	-143	gccgCACGTGCtcgc	8.33
+acgtgct|agcacgt	R	acgtgct	DDP1	-150	-144	ccgcACGTGCTcgcc	6.79
+agcacgtg|cacgtgct	D	agcacgtg	DDP1	-150	-143	ggcgAGCACGTGcggc	5.82
+cccacg|cgtggg	R	cccacg	DDP1	-16	-11	tttcCCCACGctct	4.49
+acgtgcg|cgcacgt	D	acgtgcg	DDP1	-147	-141	gagcACGTGCGgctt	4.48
+gcacgtgc|gcacgtgc	DR	gcacgtgc	DDP1	-149	-142	gcgaGCACGTGCggct	4.42
+cacgtgcg|cgcacgtg	D	cacgtgcg	DDP1	-148	-141	cgagCACGTGCGgctt	2.58
+cgcacg|cgtgcg	R	cgcacg	DDP1	-146	-141	aagcCGCACGtgct	2.01
+agcacg|cgtgct	D	agcacg	DDP1	-150	-145	ggcgAGCACGtgcg	1.92
+acgtgctc|gagcacgt	R	acgtgctc	DDP1	-151	-144	ccgcACGTGCTCgccg	1.27
+cgtgctc|gagcacg	R	cgtgctc	DDP1	-151	-145	cgcaCGTGCTCgccg	0.80
+tgccaa|ttggca	R	tgccaa	DDP1	-732	-727	gccgTGCCAAtaag	0.48
+attaga|tctaat	R	attaga	DDP1	-495	-490	ggaaATTAGAaaaa	0.07
+START_END	DR	-	HOR2	-800	-1	-	0.00
+cacgtg|cacgtg	DR	cacgtg	HOR2	-257	-252	ctccCACGTGacgt	12.10
+cacgtgg|ccacgtg	R	cacgtgg	HOR2	-258	-252	acgtCACGTGGgagg	11.15
+cacgtggg|cccacgtg	R	cacgtggg	HOR2	-259	-252	acgtCACGTGGGaggc	9.40
+acgtgg|ccacgt	R	acgtgg	HOR2	-258	-253	cgtcACGTGGgagg	8.20
+acgtggg|cccacgt	R	acgtggg	HOR2	-259	-253	cgtcACGTGGGaggc	7.06
+cccacg|cgtggg	D	cccacg	HOR2	-259	-254	gcctCCCACGtgac	4.49
+acgtggga|tcccacgt	R	acgtggga	HOR2	-260	-253	cgtcACGTGGGAggcc	0.50
+tgccaa|ttggca	D	tgccaa	HOR2	-117	-112	ggatTGCCAAaggt	0.48
+tgccaa|ttggca	R	tgccaa	HOR2	-489	-484	gaggTGCCAAaata	0.48
+attaga|tctaat	D	attaga	HOR2	-553	-548	tcccATTAGAtatt	0.07
+attaga|tctaat	R	attaga	HOR2	-433	-428	cgatATTAGAgaga	0.07
+START_END	DR	-	YNL217W	-329	-1	-	0.00
+acgtgc|gcacgt	R	acgtgc	YNL217W	-222	-217	aaaaACGTGCcagc	13.06
+aacgtgc|gcacgtt	R	aacgtgc	YNL217W	-222	-216	caaaAACGTGCcagc	1.62
+aacgtg|cacgtt	R	aacgtg	YNL217W	-221	-216	caaaAACGTGccag	1.34
+aggatcc|ggatcct	D	aggatcc	YNL217W	-172	-166	atcaAGGATCCacct	0.83
+attaga|tctaat	D	attaga	YNL217W	-117	-112	atatATTAGAacat	0.07
+ctgcac|gtgcag	R	ctgcac	YNL217W	-212	-207	catgCTGCACaaaa	0.05
+START_END	DR	-	YJL119C	-1000	-1	-	0.00
+acgtgc|gcacgt	D	acgtgc	YJL119C	-450	-445	gagcACGTGCgggc	13.06
+acgtgc|gcacgt	R	acgtgc	YJL119C	-452	-447	ccgcACGTGCtctt	13.06
+cacgtg|cacgtg	DR	cacgtg	YJL119C	-451	-446	agagCACGTGcggg	12.10
+cacgtgc|gcacgtg	D	cacgtgc	YJL119C	-451	-445	agagCACGTGCgggc	8.33
+cacgtgc|gcacgtg	R	cacgtgc	YJL119C	-452	-446	cccgCACGTGCtctt	8.33
+acgtgct|agcacgt	R	acgtgct	YJL119C	-453	-447	ccgcACGTGCTcttt	6.79
+agcacgtg|cacgtgct	D	agcacgtg	YJL119C	-453	-446	aaagAGCACGTGcggg	5.82
+acgtgcg|cgcacgt	D	acgtgcg	YJL119C	-450	-444	gagcACGTGCGggcg	4.48
+gcacgtgc|gcacgtgc	DR	gcacgtgc	YJL119C	-452	-445	aagaGCACGTGCgggc	4.42
+cacgtgcg|cgcacgtg	D	cacgtgcg	YJL119C	-451	-444	agagCACGTGCGggcg	2.58
+cgcacg|cgtgcg	R	cgcacg	YJL119C	-449	-444	cgccCGCACGtgct	2.01
+agcacg|cgtgct	D	agcacg	YJL119C	-453	-448	aaagAGCACGtgcg	1.92
+aacgtg|cacgtt	D	aacgtg	YJL119C	-145	-140	tcttAACGTGtgtg	1.34
+acgtgctc|gagcacgt	R	acgtgctc	YJL119C	-454	-447	ccgcACGTGCTCttta	1.27
+aggatcc|ggatcct	R	aggatcc	YJL119C	-944	-938	atacAGGATCCgttg	0.83
+cgtgctc|gagcacg	R	cgtgctc	YJL119C	-454	-448	cgcaCGTGCTCttta	0.80
+cagccac|gtggctg	D	cagccac	YJL119C	-272	-266	ggaaCAGCCACcatc	0.69
+acagccac|gtggctgt	D	acagccac	YJL119C	-273	-266	tggaACAGCCACcatc	0.54
+attaga|tctaat	D	attaga	YJL119C	-33	-28	attgATTAGAatag	0.07
+attaga|tctaat	R	attaga	YJL119C	-721	-716	catcATTAGAcaaa	0.07
+ctgcac|gtgcag	R	ctgcac	YJL119C	-302	-297	ccaaCTGCACtggt	0.05
+ctgcac|gtgcag	R	ctgcac	YJL119C	-60	-55	ggctCTGCACtctt	0.05
+START_END	DR	-	YAR070C	-1000	-1	-	0.00
+acgtgc|gcacgt	D	acgtgc	YAR070C	-388	-383	tgtgACGTGCggaa	13.06
+cacgtg|cacgtg	DR	cacgtg	YAR070C	-320	-315	aaccCACGTGtgaa	12.10
+cacgtgg|ccacgtg	R	cacgtgg	YAR070C	-321	-315	ttcaCACGTGGgttt	11.15
+cacgtggg|cccacgtg	R	cacgtggg	YAR070C	-322	-315	ttcaCACGTGGGttta	9.40
+acgtgg|ccacgt	D	acgtgg	YAR070C	-186	-181	gaaaACGTGGtaat	8.20
+acgtgg|ccacgt	R	acgtgg	YAR070C	-321	-316	tcacACGTGGgttt	8.20
+acgtggg|cccacgt	R	acgtggg	YAR070C	-322	-316	tcacACGTGGGttta	7.06
+cccacg|cgtggg	D	cccacg	YAR070C	-322	-317	taaaCCCACGtgtg	4.49
+cccacg|cgtggg	D	cccacg	YAR070C	-102	-97	gacaCCCACGatga	4.49
+acgtgcg|cgcacgt	D	acgtgcg	YAR070C	-388	-382	tgtgACGTGCGgaat	4.48
+cgcacg|cgtgcg	R	cgcacg	YAR070C	-387	-382	attcCGCACGtcac	2.01
+aacgtg|cacgtt	D	aacgtg	YAR070C	-187	-182	cgaaAACGTGgtaa	1.34
+acacgtgg|ccacgtgt	R	acacgtgg	YAR070C	-321	-314	gttcACACGTGGgttt	0.93
+acacgtg|cacgtgt	R	acacgtg	YAR070C	-320	-314	gttcACACGTGggtt	0.52
+tgccaa|ttggca	R	tgccaa	YAR070C	-989	-984	cactTGCCAAttcg	0.48
+tgccaa|ttggca	R	tgccaa	YAR070C	-465	-460	gaatTGCCAAgtaa	0.48
+tgccaa|ttggca	R	tgccaa	YAR070C	-399	-394	acatTGCCAAattg	0.48
+attaga|tctaat	D	attaga	YAR070C	-110	-105	ctttATTAGAcacc	0.07
+; Host name	rsat-tagc
+; Job started	2020-04-08.172747
+; Job done	2020-04-08.172747
+; Seconds	0.36
+;	user	0.36
+;	system	0.01
+;	cuser	0
+;	csystem	0
