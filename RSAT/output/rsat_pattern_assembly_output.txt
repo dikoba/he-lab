@@ -1,0 +1,104 @@
+; pattern-assembly  -v 1 -i $RSAT/public_html/tmp/www-data/2020/04/08/pattern-assembly_2020-04-08.171743_j1xDEd.pat -maxfl 1 -subst 1 -maxpat 200 -2str
+; Input file	$RSAT/public_html/tmp/www-data/2020/04/08/pattern-assembly_2020-04-08.171743_j1xDEd.pat
+; Input score column           	8
+; Output score column          	0
+; Strand-insensitive assembly
+; Max flanking bases           	1
+; Max substitutions            	1
+; Min matches                  	0
+; Min weight                   	0
+; Max assembly size            	50
+; Max assembly width           	0
+; Max number of patterns       	200
+; Number of input patterns     	30
+;
+
+; assembly # 1	seed: acgtgc	16 assembled patterns	length 12
+;     alignt	     rev_cpl	score
+gagcacgt....	....acgtgctc	1.27
+gagcacg.....	.....cgtgctc	0.80
+.agcacgt....	....acgtgct.	6.79
+.agcacgtg...	...cacgtgct.	5.82
+.agcacg.....	.....cgtgct.	1.92
+..gcacgt....	....acgtgc..	13.06
+..gcacgtg...	...cacgtgc..	8.33
+..gcacgtgc..	..gcacgtgc..	4.42
+...cacgtg...	...cacgtg...	12.10
+...cacgtgc..	..gcacgtg...	8.33
+...cacgtgct.	.agcacgtg...	5.82
+....acgtgc..	..gcacgt....	13.06
+....acgtgct.	.agcacgt....	6.79
+....acgtgctc	gagcacgt....	1.27
+.....cgtgct.	.agcacg.....	1.92
+.....cgtgctc	gagcacg.....	0.80
+gagcacgtgctc	gagcacgtgctc	13.06	best consensus
+
+; assembly # 2	seed: cacgtgg	15 assembled patterns	length 12
+;     alignt	     rev_cpl	score
+gagcacgt....	....acgtgctc	1.27
+gagcacg.....	.....cgtgctc	0.80
+.agcacgt....	....acgtgct.	6.79
+.agcacgtg...	...cacgtgct.	5.82
+.agcacg.....	.....cgtgct.	1.92
+..gcacgt....	....acgtgc..	13.06
+..gcacgtg...	...cacgtgc..	8.33
+..gcacgtgg..	..ccacgtgc..	5.72
+...cacgtg...	...cacgtg...	12.10
+...cacgtgg..	..ccacgtg...	11.15
+...cacgtggg.	.cccacgtg...	9.40
+....acgtgg..	..ccacgt....	8.20
+....acgtggg.	.cccacgt....	7.06
+....acgtggga	tcccacgt....	0.50
+.....cgtggg.	.cccacg.....	4.49
+gagcacgtggga	tcccacgtgctc	13.06	best consensus
+
+; assembly # 3	seed: acgtgcg	14 assembled patterns	length 11
+;    alignt	    rev_cpl	score
+gagcacgt...	...acgtgctc	1.27
+gagcacg....	....cgtgctc	0.80
+.agcacgt...	...acgtgct.	6.79
+.agcacgtg..	..cacgtgct.	5.82
+.agcacg....	....cgtgct.	1.92
+..gcacgt...	...acgtgc..	13.06
+..gcacgtg..	..cacgtgc..	8.33
+..gcacgtgc.	.gcacgtgc..	4.42
+...cacgtg..	..cacgtg...	12.10
+...cacgtgc.	.gcacgtg...	8.33
+...cacgtgcg	cgcacgtg...	2.58
+....acgtgc.	.gcacgt....	13.06
+....acgtgcg	cgcacgt....	4.48
+.....cgtgcg	cgcacg.....	2.01
+gagcacgtgcg	cgcacgtgctc	13.06	best consensus
+
+; assembly # 4	seed: aacgtgc	7 assembled patterns	length 9
+;  alignt	  rev_cpl	score
+aacgtgc..	..gcacgtt	1.62
+aacgtg...	...cacgtt	1.34
+.acgtgc..	..gcacgt.	13.06
+.acgtgct.	.agcacgt.	6.79
+.acgtgctc	gagcacgt.	1.27
+..cgtgct.	.agcacg..	1.92
+..cgtgctc	gagcacg..	0.80
+aacgtgctc	gagcacgtt	13.06	best consensus
+
+; assembly # 5	seed: acacgtgg	9 assembled patterns	length 10
+;   alignt	   rev_cpl	score
+acacgtgg..	..ccacgtgt	0.93
+acacgtg...	...cacgtgt	0.52
+.cacgtg...	...cacgtg.	12.10
+.cacgtgg..	..ccacgtg.	11.15
+.cacgtggg.	.cccacgtg.	9.40
+..acgtgg..	..ccacgt..	8.20
+..acgtggg.	.cccacgt..	7.06
+..acgtggga	tcccacgt..	0.50
+...cgtggg.	.cccacg...	4.49
+acacgtggga	tcccacgtgt	12.10	best consensus
+; Maximal number of assemblies is reached (5). Remaining patterns: 6.
+; Host name	rsat-tagc
+; Job started	2020-04-08.171743
+; Job done	2020-04-08.171747
+; Seconds	4.08
+;	user	4.08
+;	system	0.01
+;	cuser	0
+;	csystem	0
