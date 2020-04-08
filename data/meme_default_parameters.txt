@@ -1,0 +1,1 @@
+meme ScPho4_gene_target_sequences.txt -dna -oc . -nostatus -time 18000 -mod zoops -nmotifs 3 -minw 6 -maxw 50 -objfun classic -revcomp -markov_order 0
